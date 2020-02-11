@@ -182,7 +182,7 @@ def print_menu():
 def menu():
     print_menu()
     choice = input('select option: ')
-    if choice == '99':
+    if choice == '99' or choice == 'exit':
         os.system('clear')
         exit()
     elif choice == '0':
@@ -222,6 +222,7 @@ def menu():
         os.system('clear')
         menu()
     elif choice == '7':
+        do_upgrade()
         main_installation()
         install_mdk4()
         install_sherlock()
